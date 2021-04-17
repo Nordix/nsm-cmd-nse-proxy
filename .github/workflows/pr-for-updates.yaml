@@ -6,7 +6,7 @@ on:
       - update/**
 jobs:
   auto-pull-request:
-    name: Pull Request on update/* Branch Push
+    name: Pull Request on update/sync Branch Push
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,4 +20,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.NSM_BOT_GITHUB_TOKEN }}
           BRANCH_PREFIX: "update/"
-          PULL_REQUEST_BRANCH: "master"
+          PULL_REQUEST_BRANCH: "main"
