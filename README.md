@@ -21,6 +21,15 @@ You can build the docker container by running:
 docker build .
 ```
 
+# Usage
+
+## Environment config
+
+* `NSM_NAME`               - Namespace of Network service  (default: "proxy-endpoint")
+* `NSM_LISTEN_ON`          - Network Service Endpoint Listen point (default: "tcp://127.0.0.1:6001")
+* `NSM_CONNECT_TO`         - url to connect to NSM (default: "unix:///var/lib/networkservicemesh/nsm.io.sock")
+* `NSM_MAX_TOKEN_LIFETIME` - maximum lifetime of tokens (default: "24h")
+
 # Testing
 
 ## Testing Docker container
